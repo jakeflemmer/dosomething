@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SubMenu } from './SubMenu';
-import logo from './logo.png';
+import logo from './logo.jpg';
 
 export function SideMenu() {
 	return (
 			<div className="navMenu">
 				<nav>
+					<Link to="/" className="logo"><img src={logo} alt="active logo"/></Link> 
 					<ul className="navMenu">
-						<li><Link to="/" className="logo"><img src={logo} alt="active logo"/></Link></li>
 						<hr />
 						<SubMenu label="Activities" >
 							<li><Link to="/activity/recreational">Recreational</Link></li>

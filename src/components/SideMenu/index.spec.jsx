@@ -1,12 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { SideMenu } from './index';
 import { SubMenu } from './SubMenu';
 
 describe('Side menu', () => {
 
 	let wrapper;
-	beforeEach(() => wrapper = mount(<SideMenu />));
+	beforeEach(() => wrapper = mount(<Router><SideMenu /></Router>));
 
 	it('renders without crashing', () => {
 		expect(wrapper).toBeDefined();

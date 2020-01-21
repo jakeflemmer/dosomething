@@ -4,10 +4,9 @@ import { act } from "react-dom/test-utils";
 import { Settings } from './index';
 
 describe('Settings', () => {
-	it('has a form with three inputs and three labels and a button', () => {
+	it('has a form with three inputs and a button', () => {
 		const wrapper = mount(<Settings handleSubmit={() => {}}/>);
 		expect(wrapper.find('form').length).toEqual(1);
-		expect(wrapper.find('label').length).toEqual(3);
 		expect(wrapper.find('input').length).toEqual(3);
 		expect(wrapper.find('button').length).toEqual(1);
 	});

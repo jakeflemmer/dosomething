@@ -11,7 +11,7 @@ export function Landing({ handleLogin, isLoggedIn }) {
 							<h1>Just Do Something</h1>
 						</header>
 						<main>
-							<img src={art} alt="active stick figures"/>
+							<img src={art} alt="active stick figures"/>  
 						</main>
 						<nav role="navigation">
 							<Link to="/activity/recreational"><button>DO SOMETHING</button></Link>

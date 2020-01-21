@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export function SubMenu({ label, children }) {
 
-	const [ isOpen, setOpen ] = useState(true);
+	const [ isOpen, setOpen ] = useState(false);
 
 	return (
 		<ul 
@@ -12,7 +12,7 @@ export function SubMenu({ label, children }) {
 			>
 			<li>{label}<span className="symbol">{ isOpen ? '-' : '+' }</span></li>
 			{ isOpen &&
-				React.Children.map(children, child => React.cloneElement(child, { onClick: e => e.stopPropagation(), className: 'subMenuItem' }))
+				React.Children.map(children, child => React.cloneElement(child, { className: 'subMenuItem' }))
 			}
 		</ul>
 	);

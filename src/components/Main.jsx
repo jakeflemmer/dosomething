@@ -9,7 +9,7 @@ import './Main.css';
 
 export function Main() {
 
-		const [ isAuth, setIsAuth ] = useState(true);
+		const [ isAuth, setIsAuth ] = useState(false);
 
 		return(
 			<Router>
