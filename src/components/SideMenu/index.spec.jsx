@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { SideMenu } from './index';
+import { SubMenu } from './SubMenu';
 
 describe('Side menu', () => {
 
@@ -13,9 +14,10 @@ describe('Side menu', () => {
 
 	it('has a list with Activites and Account in it', () => {
 		expect(wrapper.find('li').length).toEqual(2);
-		const firstItem = wrapper.find('li').first();
-		expect(firstItem.containsMatchingElement(<li>Activities</li>)).toBeTruthy();
-		const secondItem = wrapper.find('li').at(1);
-		expect(secondItem.containsMatchingElement(<li>Account</li>)).toBeTruthy();
+		const firstItem = wrapper.find('SubMenu').first();
+		expect(firstItem.text()).toMatch(/Activities/);
+		const secondItem = wrapper.find('SubMenu').at(1);
+		expect(secondItem.text()).toMatch(/Account/);
 	});
 });
+
