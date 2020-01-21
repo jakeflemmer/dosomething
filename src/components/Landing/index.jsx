@@ -7,9 +7,18 @@ export function Landing({ handleLogin, isLoggedIn }) {
 
 	return (
 					<div className="landing">
-						<img src={art}/>
-						<Link to="/activity/recreational"><button>DO SOMETHING</button></Link>
-						<button onClick={handleLogin}>{ isLoggedIn ? 'LOG OUT' : 'LOG IN' }</button>
+						<header>
+							<h1>Just Do Something</h1>
+						</header>
+						<main>
+							<img src={art} alt="active stick figures"/>
+						</main>
+						<nav role="navigation">
+							<Link to="/activity/recreational"><button>DO SOMETHING</button></Link>
+						</nav>
+						<footer>
+							<button onClick={handleLogin}>{ isLoggedIn ? 'LOG OUT' : 'LOG IN' }</button>
+						</footer>
 					</div>
 				);
 }

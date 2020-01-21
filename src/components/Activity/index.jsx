@@ -20,9 +20,14 @@ export function Activity({ match }) {
 
 	return (
 		<div className="content">
-			<p>Activity : {boredData.activity}</p>
-			<p>Type : {boredData.type}</p>
-			<p>Participants : {boredData.participants}</p>
+			<header>
+				<h1>Do Something</h1>
+			</header>
+			<main>
+				<p>Activity : {boredData.activity}</p>
+				<p>Type : {boredData.type}</p>
+				<p>Participants : {boredData.participants}</p>
+			</main>
 		</div>
 	)
 }

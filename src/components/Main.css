@@ -9,12 +9,12 @@
 	font-family: 'Helvetica Neue';
 }
 
-.nav {
+.navMenu {
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
 	flex: 33%;
-	background-color: #59baff;
+	background-color: #494949;
 	justify-content: center;
 	padding: 0;
 	margin: 0;
@@ -40,23 +40,9 @@
 	border-radius: 1rem;
 }
 
-hr {
-	width: 100%;
-	color: white;
-}
-
-a {
-	color: #494949;
-	text-decoration: none !important;
-}
-
-li {
-	cursor: pointer;
-	padding: 0.5rem;
-}
-
 .subMenuItem:hover {
 	background-color: #cccccc;
+	color: #3c3c3c;
 }
 
 .symbol {
@@ -79,6 +65,8 @@ li {
 	min-height: 50vh;
 	padding-bottom: 3rem;
 }
+
+/* general */
 
 input {
 	font-size: 1.25rem;
@@ -106,4 +94,24 @@ button:hover {
 	background: #59baff;
 	border-color: #ffffff !important;
 	transition: all 0.4s ease 0s;
+}
+
+hr {
+	width: 100%;
+	color: white;
+}
+
+a {
+	color: #fff;
+	text-decoration: none !important;
+}
+
+li {
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
 }

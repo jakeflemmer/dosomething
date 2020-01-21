@@ -14,20 +14,30 @@ export function Settings({ handleSubmit }) {
 	}
 
 	return (
-		<form className="content settings"
-			onSubmit={handleFormSubmit}>
-			<input 
-				placeholder="FIRST NAME"
-				onChange={e => setFirstName(e.target.value)} />
-			<input 
-				placeholder="LAST NAME"
-				onChange={ e => setLastName(e.target.value)}/>
-			<input 
-				type="email"
-				placeholder="EMAIL"
-				onChange={ e => setEmail(e.target.value)}/>
-			<button type="submit" >SUBMIT</button>
-		</form>
+		<div className="content">
+			<header>
+				<h1>Settings</h1>
+			</header>
+			<main>
+				<form 
+					onSubmit={handleFormSubmit}>
+					<input 
+						aria-label="first name"
+						placeholder="FIRST NAME"
+						onChange={e => setFirstName(e.target.value)} />
+					<input 
+						aria-label="last name"
+						placeholder="LAST NAME"
+						onChange={ e => setLastName(e.target.value)}/>
+					<input 
+						aria-label="email"
+						type="email"
+						placeholder="EMAIL"
+						onChange={ e => setEmail(e.target.value)}/>
+					<button type="submit" >SUBMIT</button>
+				</form>
+			</main>
+		</div>
 	);
 }
 
