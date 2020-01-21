@@ -16,13 +16,17 @@ export function Settings({ handleSubmit }) {
 	return (
 		<form className="content settings"
 			onSubmit={handleFormSubmit}>
-			<label>First Name:</label>
-			<input onChange={e => setFirstName(e.target.value)} />
-			<label>Last Name:</label>
-			<input onChange={ e => setLastName(e.target.value)}/>
-			<label>Email:</label>
-			<input onChange={ e => setEmail(e.target.value)}/>
-			<button type="submit" >Submit</button>
+			<input 
+				placeholder="FIRST NAME"
+				onChange={e => setFirstName(e.target.value)} />
+			<input 
+				placeholder="LAST NAME"
+				onChange={ e => setLastName(e.target.value)}/>
+			<input 
+				type="email"
+				placeholder="EMAIL"
+				onChange={ e => setEmail(e.target.value)}/>
+			<button type="submit" >SUBMIT</button>
 		</form>
 	);
 }

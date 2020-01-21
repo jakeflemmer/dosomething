@@ -1,1 +1,109 @@
+.main{
+	display: flex;
+	flex-direction: row;
+	background-color: #eeeeee;
+	height: 100vh;
+	min-height: 100vh;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue';
+}
 
+.nav {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	flex: 33%;
+	background-color: #59baff;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	flex: 66%;
+	color: #3c3c3c;
+	justify-content: center;
+	align-items: center;
+}
+
+/* side menu */
+
+.logo img {
+	position: fixed;
+	top: 3vw;
+	left: 3vw;
+	width: 6vw;
+	border-radius: 1rem;
+}
+
+hr {
+	width: 100%;
+	color: white;
+}
+
+a {
+	color: #494949;
+	text-decoration: none !important;
+}
+
+li {
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
+.subMenuItem:hover {
+	background-color: #cccccc;
+}
+
+.symbol {
+	float: right;
+	padding-right: 1rem;
+}
+
+/* landing page */
+
+.landing {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-width: 100vw;
+}
+
+.landing img { 
+	min-width: 50vw;
+	min-height: 50vh;
+	padding-bottom: 3rem;
+}
+
+input {
+	font-size: 1.25rem;
+	border-radius: 0.2rem;
+	color: #494949;
+	margin: 0.5rem;
+	padding: 1rem;
+	border: 2px solid #494949 !important;
+}
+
+button {
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	color: #494949 !important;
+	background: #ffffff;
+	padding: 20px;
+	border: 4px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+	margin: 1rem;
+}
+
+button:hover {
+	color: #ffffff !important;
+	background: #59baff;
+	border-color: #ffffff !important;
+	transition: all 0.4s ease 0s;
+}
