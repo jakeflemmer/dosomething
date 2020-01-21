@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Main } from './components/Main';
 
 class App extends React.Component{
-    render(){
-        return(
-            <div>Hello World</div>
-        )
-    }
+
+	render(){
+		return(
+			<Main />
+		)
+	}
 }
 
 ReactDOM.render(<App />, document.getElementById('app'))
