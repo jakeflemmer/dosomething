@@ -17,6 +17,5 @@ describe('Side menu', () => {
 		expect(firstItem.containsMatchingElement(<li>Activities</li>)).toBeTruthy();
 		const secondItem = wrapper.find('li').at(1);
 		expect(secondItem.containsMatchingElement(<li>Account</li>)).toBeTruthy();
-
 	});
 });
